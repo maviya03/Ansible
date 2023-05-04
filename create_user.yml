@@ -1,0 +1,9 @@
+---
+ - name: Creating a user using "user" module
+   hosts: all
+   tasks:
+        - name: Creating user
+          user:
+              name: palash
+              state: present
+
