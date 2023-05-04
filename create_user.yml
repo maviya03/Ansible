@@ -1,6 +1,7 @@
 ---
  - name: Creating a user using "user" module
    hosts: all
+   become: yes
    tasks:
         - name: Creating user
           user:
