@@ -7,4 +7,15 @@
           user:
               name: palash
               state: present
-
+ 
+ 
+ 
+ - name: deleating user
+   hosts: all
+   become: yes
+   tasks:
+        - name: Creating user
+          user:
+              name: palash
+              state: absent
+              remove: yes
